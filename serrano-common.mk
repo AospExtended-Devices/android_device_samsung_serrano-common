@@ -133,8 +133,9 @@ PRODUCT_PACKAGES += \
     SamsungDoze
 
 # Camera
-PRODUCT_PACKAGES += \
-    Snap
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/Snap.apk:system/priv-app/Snap/Snap.apk
+
 
 # Voice processing
 PRODUCT_PACKAGES += \

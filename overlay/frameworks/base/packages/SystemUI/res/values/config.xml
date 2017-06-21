@@ -32,8 +32,4 @@
 
     <!-- Doze: pulse parameter - delay to wait for the screen to wake up after an intent -->
     <integer name="doze_pulse_delay_in_intent">0</integer>
-<<<<<<< HEAD
 </resources>
-=======
-</resources>
->>>>>>> 5365ab5... A6020: Add LenovoDoze package

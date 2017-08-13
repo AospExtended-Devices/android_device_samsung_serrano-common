@@ -23,9 +23,8 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/serrano-common/overlay
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 960
-TARGET_SCREEN_WIDTH := 540
+# Boot animation res
+TARGET_BOOT_ANIMATION_RES := 540
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -130,16 +129,11 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/Snap.apk:system/priv-app/Snap/Snap.apk
-
+     $(LOCAL_PATH)/prebuilt/Snap.apk:system/priv-app/Snap/Snap.apk
 
 # Voice processing
 PRODUCT_PACKAGES += \
     libqcomvoiceprocessing
-
-# FlipFlap
-PRODUCT_PACKAGES += \
-    FlipFlap
 
 # call common serrano system props
 $(call inherit-product, device/samsung/serrano-common/system_prop.mk)
